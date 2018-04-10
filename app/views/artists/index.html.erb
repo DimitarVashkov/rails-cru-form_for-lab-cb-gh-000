@@ -3,6 +3,6 @@
 
 <ul>
   <% @artists.each do |x| %>
-  <li><%= link_to x.name x %></li>
+  <li><%= link_to x.name artist_path(x) %></li>
   <% end %>
 </ul>
